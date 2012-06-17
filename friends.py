@@ -18,36 +18,6 @@ def init(me):
         print "Datei existiert nicht."
         exit()
     
-    
-## Fuegt einer Freundesliste einen neuen Freund hinzu.
-## @param friend: Freund, der hinzugefuegt werden soll.
-## @param friends: Liste, zu der der Freund hinzugefuegt werden soll
-## return: neue (aktualisierte) Liste
-#def add_friend(friend, friends):
- #   if friend in friends :
-  #      return friends
-   # else:
-    #    friends=friends.append(friend)
-     #   return friends
-        
-
- ## Fuegt besten Freund hinzu.
- ## @param friend: Freund, der hinzugefuegt werden soll.
- ## @param best_friends: Liste der besten Freunde.
- ## return: neue beste Freundesliste
-#def add_best_friend(friend, best_friends):
- #   if friend in best_friends:
-  #      return best_friends
-   # else:
-    #    best_friends=best_friends.append(friend)
-     #   return best_friends
-        
-#def get_friends(friends):
- #   return len(friends)
-    
-#def get_best_friends(best_friends):
- #   return len(best_friends)
-    
 def is_friend(friend, friends):
     if friend in friends:
         return True
