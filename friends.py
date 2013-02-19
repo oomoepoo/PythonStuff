@@ -41,3 +41,10 @@ def get_unique_list(lista, listb):
     listb = set(listb)
     unique_list = list(listb - lista)
     return unique_list
+
+def create_friend_list(name, *friends):
+    datei="friendlist_"+name+".txt"
+    with open(datei,"w")as f:
+        for friend in friends:
+            f.write(friend+"/n")
+    return
