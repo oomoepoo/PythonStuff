@@ -18,5 +18,5 @@ for root, dirs, files in os.walk(msa_dir):
     for name in files:
         n= os.path.join(root,name)
         msa = MSA(n)
-        msa.output('html', filename=name[0:len(name)-4)
+        msa.output('html',filename=os.path.join(root,name[0:len(name)-4]))
 
