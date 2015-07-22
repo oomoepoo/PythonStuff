@@ -4,6 +4,14 @@
 # benötigt lingpy
 # Läuft sogar auch auf Windows!
 # Fuck Windows, you and your stupid backslash! >\\\<
+# Prinzipiell: 
+#>Verzeichnisse mit Hilfe des os-moduls plattformunabhängig machen.
+#>über alle filenamen in os.walk() iterieren
+#>file mit lingpy zu html konvertieren... (vereinfacht.)
+#>nebenbei einen html_string generieren (der einfach alle einzelnen html-files als li-Elemente hat)
+#>html_string zu voller webseite ergänzen
+#>html_strig in Datei schreiben.
+#>Hooray.
 
 
 import os
@@ -11,8 +19,8 @@ from lingpy import *
 
 html_string = "<html><header></header><body><ul>"
 
-msa_dir=os.path.normpath("./msatest/")
-msa_html=os.path.normpath("./msatest/msa_html")
+msa_dir=os.path.normpath("./msa/")
+msa_html=os.path.normpath("./msa/msa_html")
 html_name = os.path.join(msa_html,"allinierungs_navigation.html")
 if not (os.path.exists(msa_dir)):
     print ("Couldn't find msa-directory, please put in the same folder you run this script from!")
