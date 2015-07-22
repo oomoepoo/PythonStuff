@@ -12,17 +12,11 @@ html_string = "<html><header></header><body></body></html>"
 msa_dir=os.path.normpath("./msatest/")
 
 if not (os.path.exists(msa_dir)):
-    print ("Couldn't find msa-directory, please put in the same folder you run this script from!"
+    print ("Couldn't find msa-directory, please put in the same folder you run this script from!")
 
 for root, dirs, files in os.walk(msa_dir):
     for name in files:
         n= os.path.join(root,name)
         msa = MSA(n)
-        msa.output('html', filename=name[0:len(name)-4))
-		
-		
-		
-		
-			
-	
+        msa.output('html', filename=name[0:len(name)-4)
 
